@@ -1,2 +1,3 @@
 # banana
-A demo for students of TS, AJAX and APIs
+
+A demo for students of TS, AJAX and APIs.
