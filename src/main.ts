@@ -1,10 +1,17 @@
 import "./style.css";
 
-const getBanana = async () => {
-	const response = await fetch("https://www.fruityvice.com/api/fruit/all");
+const getAllFruits = async () => {
+	const response = await fetch("/api/all");
 	const data = await response.json();
-
 	console.log(data);
 };
 
-getBanana();
+getAllFruits();
+
+const getFruit = async (fruit: string) => {
+	const response = await fetch(`/api/${fruit}`);
+	const data = await response.json();
+	console.log(data);
+};
+
+getFruit("banana");
